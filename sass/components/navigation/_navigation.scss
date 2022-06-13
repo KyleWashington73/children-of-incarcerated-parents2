@@ -1,8 +1,29 @@
+
+.site-header {
+	
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #eedbff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+}
+.site-branding {
+    float: left;
+    margin: 5px 15px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+}
 .main-navigation {
 	display: block;
 	width: 100%;
 
 	ul {
+		float: right;
 		display: none;
 		list-style: none;
 		margin: 0;
@@ -53,6 +74,11 @@
 		position: relative;
 
 		&:hover > a,
+		&:active{
+			&:hover {
+				color: darkmagenta;
+		}
+		}
 		&.focus > a {
 		}
 	}
@@ -60,7 +86,16 @@
 	a {
 		display: block;
 		text-decoration: none;
+		display: inline-block;
+		color: #000;
+		font-weight: bolder;
+		text-transform: uppercase;
+		margin: 20px 20px;
 	}
+
+	   
+			
+		
 
 	.current_page_item > a,
 	.current-menu-item > a,
